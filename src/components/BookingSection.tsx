@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 
 const locations = [
   {
-    hospital: "Mediclinic City Hospital",
-    location: "Dubai Healthcare City",
+    hospital: "Medcare Hospital",
+    location: "Sharjah",
     bookingLink: "#",
   },
   {
@@ -14,8 +14,8 @@ const locations = [
     bookingLink: "#",
   },
   {
-    hospital: "Canadian Specialist Hospital",
-    location: "Dubai",
+    hospital: "NMC Royal Hospital",
+    location: "Sharjah",
     bookingLink: "#",
   },
 ];

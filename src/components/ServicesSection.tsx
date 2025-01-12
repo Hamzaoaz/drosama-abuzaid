@@ -3,23 +3,23 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const services = [
   {
-    title: "General Surgery",
-    description: "Comprehensive surgical care using advanced minimally invasive techniques",
-    icon: Stethoscope,
-  },
-  {
     title: "Laparoscopic Surgery",
-    description: "Modern keyhole surgical procedures for faster recovery",
+    description: "Advanced minimally invasive procedures including cholecystectomy, hernia repair, and colorectal surgery",
     icon: Microscope,
   },
   {
-    title: "Emergency Care",
-    description: "24/7 emergency surgical consultations",
+    title: "General Surgery",
+    description: "Comprehensive surgical care for various conditions including breast surgery and thyroidectomy",
+    icon: Stethoscope,
+  },
+  {
+    title: "Colorectal Surgery",
+    description: "Expert treatment of colorectal conditions including cancer, hemorrhoids, and fistulas",
     icon: HeartPulse,
   },
   {
-    title: "Preventive Care",
-    description: "Regular check-ups and preventive surgical consultations",
+    title: "Gastrointestinal Surgery",
+    description: "Specialized procedures including anti-reflux surgery (GERD) and advanced digestive tract treatments",
     icon: Activity,
   },
 ];

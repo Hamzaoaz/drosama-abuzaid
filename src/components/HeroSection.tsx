@@ -7,13 +7,13 @@ export const HeroSection = () => {
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center animate-fadeIn">
           <h1 className="text-4xl sm:text-5xl font-bold text-medical-900 mb-6">
-            Dr. John Smith
+            Dr. Osama Saeed Abuzaid
           </h1>
           <p className="text-xl sm:text-2xl text-medical-800 mb-4">
             Consultant General Surgeon
           </p>
           <p className="text-lg text-medical-700 mb-8">
-            Specialized in minimally invasive surgery with over 15 years of experience in UAE
+            Member of the Royal College of Surgeons (MRCS), UK with over 20 years of experience in General and Laparoscopic Surgery
           </p>
           <Button className="bg-medical-500 hover:bg-medical-600 text-white" size="lg">
             <Calendar className="mr-2 h-5 w-5" />
