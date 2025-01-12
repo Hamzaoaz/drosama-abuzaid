@@ -1,13 +1,22 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Helmet } from "react-helmet";
+import { HeroSection } from "@/components/HeroSection";
+import { ServicesSection } from "@/components/ServicesSection";
+import { BookingSection } from "@/components/BookingSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Helmet>
+        <title>Dr. John Smith - Consultant General Surgeon in UAE</title>
+        <meta name="description" content="Dr. John Smith is a highly experienced consultant general surgeon in UAE, specializing in minimally invasive surgery with over 15 years of experience." />
+        <meta name="keywords" content="general surgeon UAE, consultant surgeon Dubai, laparoscopic surgery UAE, minimally invasive surgery Dubai" />
+      </Helmet>
+      <main className="min-h-screen">
+        <HeroSection />
+        <ServicesSection />
+        <BookingSection />
+      </main>
+    </>
   );
 };
 
