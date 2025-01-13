@@ -1,10 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Award, Star, GraduationCap, Globe } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
 import { useNavigate } from "react-router-dom";
 
 export const HeroSection = () => {
   const navigate = useNavigate();
+  
+  const scrollToBooking = () => {
+    const bookingSection = document.querySelector('#booking-section');
+    bookingSection?.scrollIntoView({ behavior: 'smooth' });
+  };
   
   const achievements = [
     {
@@ -70,7 +74,11 @@ export const HeroSection = () => {
             Member of the Royal College of Surgeons (MRCS), UK with over 20 years of experience in General and Laparoscopic Surgery
           </p>
           
-          <Button className="bg-medical-500 hover:bg-medical-600 text-white" size="lg">
+          <Button 
+            className="bg-medical-500 hover:bg-medical-600 text-white" 
+            size="lg"
+            onClick={scrollToBooking}
+          >
             <Calendar className="mr-2 h-5 w-5" />
             Book Consultation
           </Button>
