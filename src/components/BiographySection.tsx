@@ -125,3 +125,4 @@ export const BiographySection = () => {
       </div>
     </section>
   );
+};
