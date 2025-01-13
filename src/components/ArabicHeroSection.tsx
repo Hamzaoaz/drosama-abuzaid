@@ -1,10 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Award, Star, GraduationCap, Globe } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
 import { useNavigate } from "react-router-dom";
 
 export const ArabicHeroSection = () => {
   const navigate = useNavigate();
+  
+  const scrollToBooking = () => {
+    const bookingSection = document.querySelector('#booking-section');
+    bookingSection?.scrollIntoView({ behavior: 'smooth' });
+  };
   
   const achievements = [
     {
@@ -70,7 +74,11 @@ export const ArabicHeroSection = () => {
             زميل الكلية الملكية للجراحين في المملكة المتحدة مع خبرة تزيد عن 20 عاماً في الجراحة العامة وجراحة المنظار
           </p>
           
-          <Button className="bg-medical-500 hover:bg-medical-600 text-white" size="lg">
+          <Button 
+            className="bg-medical-500 hover:bg-medical-600 text-white" 
+            size="lg"
+            onClick={scrollToBooking}
+          >
             <Calendar className="ml-2 h-5 w-5" />
             احجز موعداً
           </Button>
