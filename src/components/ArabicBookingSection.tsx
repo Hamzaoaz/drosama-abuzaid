@@ -30,6 +30,7 @@ export const ArabicBookingSection = () => {
           <Button 
             variant="outline" 
             className="border-2 border-medical-500 text-medical-700 hover:bg-medical-50"
+            onClick={() => window.location.href = '/'}
           >
             <Globe className="ml-2 h-5 w-5" />
             English
