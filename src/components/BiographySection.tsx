@@ -64,7 +64,9 @@ export const BiographySection = () => {
               </div>
             </div>
           </div>
-          <h2 className="text-4xl font-bold text-medical-900 mb-4">Professional Excellence</h2>
+          <h2 className="text-4xl font-bold text-medical-900 mb-4 bg-clip-text text-transparent bg-gradient-to-r from-medical-800 to-medical-600">
+            Professional Excellence
+          </h2>
           <p className="text-xl text-medical-700 max-w-2xl mx-auto">
             Combining academic distinction with extensive surgical expertise to deliver exceptional patient care
           </p>
@@ -123,4 +125,3 @@ export const BiographySection = () => {
       </div>
     </section>
   );
-};
