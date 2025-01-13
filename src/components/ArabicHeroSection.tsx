@@ -3,35 +3,35 @@ import { Calendar, Award, Star, GraduationCap, Globe } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useNavigate } from "react-router-dom";
 
-export const HeroSection = () => {
+export const ArabicHeroSection = () => {
   const navigate = useNavigate();
   
   const achievements = [
     {
       icon: <Award className="h-5 w-5" />,
-      text: "MRCS, UK"
+      text: "زمالة الكلية الملكية للجراحين"
     },
     {
       icon: <Star className="h-5 w-5" />,
-      text: "20+ Years Experience"
+      text: "خبرة +20 عاماً"
     },
     {
       icon: <GraduationCap className="h-5 w-5" />,
-      text: "Clinical Professor"
+      text: "أستاذ سريري"
     }
   ];
 
   return (
     <section className="relative bg-medical-50 py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
-        <div className="absolute top-4 right-4">
+        <div className="absolute top-4 left-4">
           <Button 
             variant="outline" 
             className="border-2 border-medical-500 text-medical-700 hover:bg-medical-50"
-            onClick={() => navigate('/ar')}
+            onClick={() => navigate('/')}
           >
-            <Globe className="mr-2 h-5 w-5" />
-            عربي
+            <Globe className="ml-2 h-5 w-5" />
+            English
           </Button>
         </div>
         
@@ -41,17 +41,17 @@ export const HeroSection = () => {
               <div className="absolute inset-0 bg-medical-500 rounded-full opacity-10 animate-pulse"></div>
               <img
                 src="/lovable-uploads/bb2df379-2661-4c76-8b20-6884932129ee.png"
-                alt="Dr. Osama Saeed Abuzaid"
+                alt="د. أسامة سعيد أبو زيد"
                 className="rounded-full w-full h-full object-cover border-4 border-medical-100 shadow-xl"
               />
             </div>
           </div>
           
           <h1 className="text-4xl sm:text-5xl font-bold text-medical-900 mb-6">
-            Dr. Osama Saeed Abuzaid
+            د. أسامة سعيد أبو زيد
           </h1>
           <p className="text-xl sm:text-2xl text-medical-800 mb-4">
-            Consultant General Surgeon
+            استشاري الجراحة العامة
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -67,12 +67,12 @@ export const HeroSection = () => {
           </div>
           
           <p className="text-lg text-medical-700 mb-8">
-            Member of the Royal College of Surgeons (MRCS), UK with over 20 years of experience in General and Laparoscopic Surgery
+            زميل الكلية الملكية للجراحين في المملكة المتحدة مع خبرة تزيد عن 20 عاماً في الجراحة العامة وجراحة المنظار
           </p>
           
           <Button className="bg-medical-500 hover:bg-medical-600 text-white" size="lg">
-            <Calendar className="mr-2 h-5 w-5" />
-            Book Consultation
+            <Calendar className="ml-2 h-5 w-5" />
+            احجز موعداً
           </Button>
         </div>
       </div>
