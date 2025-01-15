@@ -14,7 +14,7 @@ const locations = [
   {
     hospital: "مركز بيسان الطبي",
     location: "الشارقة",
-    address: "شارع النهدة",
+    address: "شارع الكورنيش، المجاز",
     city: "الشارقة",
     country: "الإمارات العربية المتحدة",
     phoneNumber: "+971 6 573 7005",
