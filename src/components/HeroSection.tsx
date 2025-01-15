@@ -41,7 +41,7 @@ export const HeroSection = () => {
         
         <div className="max-w-4xl mx-auto text-center animate-fadeIn">
           <div className="mb-8 relative inline-block">
-            <div className="w-48 h-48 relative mb-6">
+            <div className="w-56 h-56 sm:w-64 sm:h-64 relative mb-6">
               <div className="absolute inset-0 bg-medical-500 rounded-full opacity-10 animate-pulse"></div>
               <img
                 src="/lovable-uploads/bb2df379-2661-4c76-8b20-6884932129ee.png"

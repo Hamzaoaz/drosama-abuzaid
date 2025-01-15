@@ -1,4 +1,4 @@
-import { MapPin, Globe, Phone } from "lucide-react";
+import { MapPin, Globe, Phone, Building } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -6,11 +6,17 @@ const locations = [
   {
     hospital: "Medcare Hospital",
     location: "Sharjah",
+    address: "King Faisal Street, Al Qasimia",
+    city: "Sharjah",
+    country: "United Arab Emirates",
     bookingLink: "https://medcare.okadoc.com/en-ae/doctor/general-surgery/sharjah/osama-saeed-fuad-abuzaid?session_id=81490587-02be-402f-b7a4-556f46a0bb16.5u64-1736805524863t4mp4n",
   },
   {
     hospital: "Bissan Medical Center",
     location: "Sharjah",
+    address: "Al Nahda Street",
+    city: "Sharjah",
+    country: "United Arab Emirates",
     phoneNumber: "+971 6 573 7005",
   },
 ];
@@ -45,14 +51,20 @@ export const BookingSection = () => {
               <CardHeader className="bg-gradient-to-r from-medical-50 to-white">
                 <CardTitle className="text-xl text-medical-800 flex items-center gap-2">
                   <span className="text-medical-500">
-                    <MapPin className="h-5 w-5" />
+                    <Building className="h-5 w-5" />
                   </span>
                   {loc.hospital}
                 </CardTitle>
               </CardHeader>
               <CardContent className="pt-6 space-y-4">
-                <div className="text-medical-700 font-medium">
-                  {loc.location}
+                <div className="space-y-2">
+                  <div className="flex items-start gap-2 text-medical-700">
+                    <MapPin className="h-5 w-5 mt-1 flex-shrink-0" />
+                    <div>
+                      <p className="font-medium">{loc.address}</p>
+                      <p>{loc.city}, {loc.country}</p>
+                    </div>
+                  </div>
                 </div>
                 {loc.bookingLink ? (
                   <Button 
