@@ -14,7 +14,7 @@ const locations = [
   {
     hospital: "Bissan Medical Center",
     location: "Sharjah",
-    address: "Corniche Street, Al Majaz",
+    address: "Al Nahda Street",
     city: "Sharjah",
     country: "United Arab Emirates",
     phoneNumber: "+971 6 573 7005",
