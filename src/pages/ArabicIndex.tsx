@@ -3,6 +3,7 @@ import { ArabicHeroSection } from "@/components/ArabicHeroSection";
 import { ArabicServicesSection } from "@/components/ArabicServicesSection";
 import { ArabicBiographySection } from "@/components/ArabicBiographySection";
 import { ArabicBookingSection } from "@/components/ArabicBookingSection";
+import { ArabicSurgeriesSection } from "@/components/ArabicSurgeriesSection";
 
 const ArabicIndex = () => {
   return (
@@ -17,6 +18,7 @@ const ArabicIndex = () => {
       <main className="min-h-screen" dir="rtl">
         <ArabicHeroSection />
         <ArabicServicesSection />
+        <ArabicSurgeriesSection />
         <ArabicBiographySection />
         <ArabicBookingSection />
       </main>
