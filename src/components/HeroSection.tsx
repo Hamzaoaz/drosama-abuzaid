@@ -12,15 +12,15 @@ export const HeroSection = () => {
   
   const achievements = [
     {
-      icon: <Award className="h-15 w-15" />,
+      icon: <Award className="h-25 w-25" />,
       text: "MRCS, UK Fellowship Training"
     },
     {
-      icon: <GraduationCap className="h-15 w-15" />,
+      icon: <GraduationCap className="h-25 w-25" />,
       text: "Jordanian Board"
     },
     {
-      icon: <Star className="h-15 w-15" />,
+      icon: <Star className="h-25 w-25" />,
       text: "20+ Years Experience"
     }
   ];
