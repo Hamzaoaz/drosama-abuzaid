@@ -58,11 +58,11 @@ export const HeroSection = () => {
             Consultant General, Laparoscopic & Colo-proctology Surgeon
           </p>
           
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
+          <div className="grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-2 sm:gap-4 mb-8">
             {achievements.map((achievement, index) => (
               <div
                 key={index}
-                className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md border border-medical-100 hover:border-medical-500 transition-colors"
+                className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md border border-medical-100 hover:border-medical-500 transition-colors text-sm sm:text-base"
               >
                 <span className="text-medical-500">{achievement.icon}</span>
                 <span className="text-medical-800 font-medium">{achievement.text}</span>
