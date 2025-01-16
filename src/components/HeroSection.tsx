@@ -79,22 +79,24 @@ export const HeroSection = () => {
           <p className="text-lg text-medical-700 mb-8">
             Member of the Royal College of Surgeons (MRCS), UK with over 20 years of experience in General, Laparoscopic, and Colo-proctology Surgery
           </p>
-          
-          <Button 
-            className="bg-medical-500 hover:bg-medical-600 text-white mb-8" 
-            size="lg"
-            onClick={scrollToBooking}
-          >
-            <Calendar className="mr-2 h-5 w-5" />
-            Book Consultation
-          </Button>
 
           <div className="mt-6 flex flex-col items-center">
             <ul className="space-y-2">
               {locations.map((location, index) => (
-                <li key={index} className="flex items-center gap-2 text-medical-700">
-                  <MapPin className="h-4 w-4 text-medical-500 flex-shrink-0" />
-                  <span>{location}</span>
+                <li key={index} className="flex items-center justify-between gap-4 text-medical-700 w-full max-w-md">
+                  <div className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-medical-500 flex-shrink-0" />
+                    <span>{location}</span>
+                  </div>
+                  <Button 
+                    variant="outline"
+                    size="sm"
+                    className="border-medical-500 text-medical-700 hover:bg-medical-50"
+                    onClick={scrollToBooking}
+                  >
+                    <Calendar className="mr-1 h-4 w-4" />
+                    Book
+                  </Button>
                 </li>
               ))}
             </ul>
