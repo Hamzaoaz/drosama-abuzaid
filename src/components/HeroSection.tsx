@@ -12,15 +12,15 @@ export const HeroSection = () => {
   
   const achievements = [
     {
-      icon: <Award className="h-4 w-4" />,
+      icon: <Award className="h-6 w-6" />,
       text: "MRCS, UK Fellowship Training"
     },
     {
-      icon: <Star className="h-4 w-4" />,
+      icon: <GraduationCap className="h-6 w-6" />,
       text: "Jordanian Board"
     },
     {
-      icon: <GraduationCap className="h-4 w-4" />,
+      icon: <Star className="h-6 w-6" />,
       text: "20+ Years Experience"
     }
   ];
@@ -71,7 +71,7 @@ export const HeroSection = () => {
           </div>
           
           <p className="text-lg text-medical-700 mb-8">
-            Member of the Royal College of Surgeons (MRCS), UK with over 20 years of experience in General and Laparoscopic Surgery
+            Member of the Royal College of Surgeons (MRCS), UK with over 20 years of experience in General, Laparoscopic, and Colo-proctology Surgery
           </p>
           
           <Button 
