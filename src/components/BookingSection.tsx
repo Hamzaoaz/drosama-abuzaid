@@ -10,7 +10,6 @@ const locations = [
     city: "Sharjah",
     country: "United Arab Emirates",
     bookingLink: "https://medcare.okadoc.com/en-ae/doctor/general-surgery/sharjah/osama-saeed-fuad-abuzaid?session_id=81490587-02be-402f-b7a4-556f46a0bb16.5u64-1736805524863t4mp4n",
-    phoneNumber1: "+971 800 633 2273",
   },
   {
     hospital: "Bissan Medical Center",
@@ -18,7 +17,7 @@ const locations = [
     address: "Corniche St, Al Majaz",
     city: "Sharjah",
     country: "United Arab Emirates",
-    phoneNumber2: "+971 6 573 7005",
+    phoneNumber: "+971 6 573 7005",
   },
 ];
 
@@ -72,19 +71,12 @@ export const BookingSection = () => {
                     className="w-full bg-medical-500 hover:bg-medical-600 transform transition-all duration-300 hover:scale-105"
                     onClick={() => window.open(loc.bookingLink, '_blank')}
                   >
-                    Book Appointment Online
-                  </Button>
-                  <Button
-                      className="w-full bg-medical-500 hover:bg-medical-600 transform transition-all duration-300 hover:scale-105"
-                    onClick={() => handleCall(loc.phoneNumber1!)}
-                >
-                <Phone className="mr-2 h-5 w-5" />
-                    Call to Book
+                    Book Appointment
                   </Button>
                 ) : (
                   <Button 
                     className="w-full bg-medical-500 hover:bg-medical-600 transform transition-all duration-300 hover:scale-105"
-                    onClick={() => handleCall(loc.phoneNumber2!)}
+                    onClick={() => handleCall(loc.phoneNumber!)}
                   >
                     <Phone className="mr-2 h-5 w-5" />
                     Call to Book
