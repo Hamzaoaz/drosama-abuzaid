@@ -13,15 +13,15 @@ export const HeroSection = () => {
   const achievements = [
     {
       icon: <Award className="h-5 w-5" />,
-      text: "MRCS, UK"
+      text: "MRCS, UK Fellowship Training"
     },
     {
-      icon: <Star className="h-5 w-5" />,
-      text: "20+ Years Experience"
+      icon: <Star className="h-4 w-4" />,
+      text: "Jordanian Board"
     },
     {
       icon: <GraduationCap className="h-5 w-5" />,
-      text: "Clinical Professor"
+      text: "20+ Years Experience"
     }
   ];
 
@@ -55,7 +55,7 @@ export const HeroSection = () => {
             Dr. Osama Saeed Abuzaid
           </h1>
           <p className="text-xl sm:text-2xl text-medical-800 mb-4">
-            Consultant General Surgeon
+            Consultant General, Laparoscopic & Colo-proctology Surgeon
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-8">
