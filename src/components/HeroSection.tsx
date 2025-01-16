@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Award, Star, GraduationCap, Globe } from "lucide-react";
+import { Calendar, Award, Star, GraduationCap, Globe, MapPin } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 export const HeroSection = () => {
@@ -23,6 +23,12 @@ export const HeroSection = () => {
       icon: <Star className="h-50 w-25" />,
       text: "20+ Years Experience"
     }
+  ];
+
+  const locations = [
+    "Medcare Hospital Sharjah",
+    "Bissan Medical Center",
+    "Medcare Medical Center Al-Taawun (Soon)"
   ];
 
   return (
@@ -75,13 +81,24 @@ export const HeroSection = () => {
           </p>
           
           <Button 
-            className="bg-medical-500 hover:bg-medical-600 text-white" 
+            className="bg-medical-500 hover:bg-medical-600 text-white mb-8" 
             size="lg"
             onClick={scrollToBooking}
           >
             <Calendar className="mr-2 h-5 w-5" />
             Book Consultation
           </Button>
+
+          <div className="mt-6 flex flex-col items-center">
+            <ul className="space-y-2">
+              {locations.map((location, index) => (
+                <li key={index} className="flex items-center gap-2 text-medical-700">
+                  <MapPin className="h-4 w-4 text-medical-500 flex-shrink-0" />
+                  <span>{location}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>
