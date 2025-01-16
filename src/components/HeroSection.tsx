@@ -12,7 +12,7 @@ export const HeroSection = () => {
   
   const achievements = [
     {
-      icon: <Award className="h-60 w-25" />,
+      icon: <Award className="h-5 w-25" />,
       text: "MRCS, UK Fellowship Training"
     },
     {
