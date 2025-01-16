@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Award, Star, GraduationCap, Globe } from "lucide-react";
+import { Award, Star, GraduationCap, Globe, MapPin, Calendar } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 export const ArabicHeroSection = () => {
@@ -23,6 +23,12 @@ export const ArabicHeroSection = () => {
       icon: <GraduationCap className="h-5 w-5" />,
       text: "أستاذ سريري"
     }
+  ];
+
+  const locations = [
+    "مستشفى ميدكير الشارقة",
+    "مركز بيسان الطبي",
+    "مركز ميدكير الطبي - التعاون (قريباً)"
   ];
 
   return (
@@ -73,15 +79,28 @@ export const ArabicHeroSection = () => {
           <p className="text-lg text-medical-700 mb-8">
             زميل الكلية الملكية للجراحين في المملكة المتحدة مع خبرة تزيد عن 20 عاماً في الجراحة العامة وجراحة المنظار
           </p>
-          
-          <Button 
-            className="bg-medical-500 hover:bg-medical-600 text-white" 
-            size="lg"
-            onClick={scrollToBooking}
-          >
-            <Calendar className="ml-2 h-5 w-5" />
-            احجز موعداً
-          </Button>
+
+          <div className="mt-6 flex flex-col items-center">
+            <ul className="space-y-4" dir="rtl">
+              {locations.map((location, index) => (
+                <li key={index} className="flex items-center justify-between gap-4 text-medical-700 w-full max-w-md">
+                  <div className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-medical-500 flex-shrink-0" />
+                    <span>{location}</span>
+                  </div>
+                  <Button 
+                    variant="outline"
+                    size="sm"
+                    className="border-medical-500 text-medical-700 hover:bg-medical-50"
+                    onClick={scrollToBooking}
+                  >
+                    <Calendar className="ml-1 h-4 w-4" />
+                    احجز
+                  </Button>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>
