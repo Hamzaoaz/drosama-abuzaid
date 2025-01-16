@@ -9,7 +9,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Dr. Osama Saeed Abuzaid - Consultant General Surgeon in UAE</title>
+        <title>Dr. Osama Saeed Abuzaid - Consultant General, Laparoscopic, and Coloproctologist Surgeon in UAE</title>
         <meta 
           name="description" 
           content="Dr. Osama Saeed Abuzaid is a highly experienced consultant general surgeon in UAE, specializing in laparoscopic and colorectal surgery with over 20 years of experience." 
