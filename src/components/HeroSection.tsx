@@ -16,7 +16,7 @@ export const HeroSection = () => {
       text: "MRCS, UK Fellowship Training"
     },
     {
-      icon: <GraduationCap className="h-10 w-25" />,
+      icon: <GraduationCap className="h-50 w-25" />,
       text: "Jordanian Board"
     },
     {
