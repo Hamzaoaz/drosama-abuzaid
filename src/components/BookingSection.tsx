@@ -86,10 +86,9 @@ export const BookingSection = () => {
                     className="w-full bg-medical-500 hover:bg-medical-600 transform transition-all duration-300 hover:scale-105"
                     onClick={() => handleCall(loc.phoneNumber2!)}
                   >
-                <Phone className="mr-2 h-5 w-5" />
+                    <Phone className="mr-2 h-5 w-5" />
                     Call to Book
                   </Button>
-              >
                 )}
               </CardContent>
             </Card>
