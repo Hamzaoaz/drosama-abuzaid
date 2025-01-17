@@ -15,15 +15,6 @@ const locations = [
     phoneNumber: "+9718006332273",
   },
   {
-    id: "bissan-medical",
-    hospital: "مركز بيسان الطبي",
-    location: "الشارقة",
-    address: "شارع الكورنيش، المجاز",
-    city: "الشارقة",
-    country: "الإمارات العربية المتحدة",
-    phoneNumber: "+971 6 573 7005",
-  },
-  {
     id: "medcare-taawun",
     hospital: "مركز ميدكير الطبي - التعاون",
     location: "الشارقة",
@@ -32,6 +23,15 @@ const locations = [
     country: "الإمارات العربية المتحدة",
     bookingLink: "https://www.medcare.ae/en/branches/view/medcare-medical-centre-sharjah.html",
     phoneNumber: "052 509 4473",
+  ,
+  {
+    id: "bissan-medical",
+    hospital: "مركز بيسان الطبي",
+    location: "الشارقة",
+    address: "شارع الكورنيش، المجاز",
+    city: "الشارقة",
+    country: "الإمارات العربية المتحدة",
+    phoneNumber: "+971 6 573 7005",
   }
 ];
 
