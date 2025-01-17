@@ -18,10 +18,10 @@ export const ArabicHeroSection = () => {
      {
       icon: <GraduationCap className="h-5 w-5" />,
       text: "البورد الأردني"
-    }،
-    {
-      icon: <Star className="h-5 w-5" />,
-      text: "خبرة +20 عاماً"
+    },
+      {
+        icon: <Star className="h-5 w-5" />,
+        text: "خبرة +20 عاماً"
     },
    
   ];
@@ -62,7 +62,7 @@ export const ArabicHeroSection = () => {
             د. أسامة سعيد أبو زيد
           </h1>
           <p className="text-xl sm:text-2xl text-medical-800 mb-4">
-            استشاري الجراحة العامة
+            استشاري الجراحة العامة والمنظار والمستقيم
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -78,7 +78,7 @@ export const ArabicHeroSection = () => {
           </div>
           
           <p className="text-lg text-medical-700 mb-8">
-            زميل الكلية الملكية للجراحين في المملكة المتحدة مع خبرة تزيد عن 20 عاماً في الجراحة العامة وجراحة المنظار
+            زميل الكلية الملكية للجراحين في المملكة المتحدة مع خبرة تزيد عن 20 عاماً في الجراحة العامة وجراحة المنظار والمستقيم
           </p>
 
           <div className="mt-6 flex flex-col items-center">
