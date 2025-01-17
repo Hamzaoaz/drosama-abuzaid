@@ -15,14 +15,15 @@ export const ArabicHeroSection = () => {
       icon: <Award className="h-5 w-5" />,
       text: "زمالة الكلية الملكية للجراحين"
     },
+     {
+      icon: <GraduationCap className="h-5 w-5" />,
+      text: "البورد الأردني"
+    }،
     {
       icon: <Star className="h-5 w-5" />,
       text: "خبرة +20 عاماً"
     },
-    {
-      icon: <GraduationCap className="h-5 w-5" />,
-      text: "أستاذ سريري"
-    }
+   
   ];
 
   const locations = [
