@@ -1,7 +1,11 @@
-import { GraduationCap, Award, Clock, Building2 } from "lucide-react";
+import { GraduationCap, Award, Clock, Building2, ArrowRight } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 export const BiographySection = () => {
+  const navigate = useNavigate();
+  
   const qualifications = [
     {
       title: "Education",
@@ -95,32 +99,14 @@ export const BiographySection = () => {
           ))}
         </div>
 
-        <div className="mt-20 p-8 bg-white rounded-2xl shadow-xl border border-medical-100">
-          <div className="flex flex-col md:flex-row gap-12 items-center">
-            <div className="flex-1 space-y-6">
-              <h3 className="text-3xl font-bold text-medical-900 mb-6">About Dr. Osama Saeed Abuzaid</h3>
-              <p className="text-medical-700 leading-relaxed">
-                Dr. Abuzaid brings over two decades of expertise in General and Laparoscopic Surgery. His journey spans multiple prestigious institutions across Jordan, the UK, and the UAE, where he has consistently demonstrated excellence in surgical care and medical education.
-              </p>
-              <p className="text-medical-700 leading-relaxed">
-                As a member of the Royal College of Surgeons (MRCS), UK, and with extensive training in Laparoscopic & Colorectal Surgery, Dr. Abuzaid combines surgical expertise with a commitment to patient care. He is fluent in both Arabic and English, ensuring clear communication with his diverse patient base.
-              </p>
-              <div className="flex flex-wrap gap-4 mt-6">
-                <div className="flex items-center gap-2 bg-medical-50 px-4 py-2 rounded-full">
-                  <Award className="h-5 w-5 text-medical-600" />
-                  <span className="text-medical-800 font-medium">MRCS, UK</span>
-                </div>
-                <div className="flex items-center gap-2 bg-medical-50 px-4 py-2 rounded-full">
-                  <Building2 className="h-5 w-5 text-medical-600" />
-                  <span className="text-medical-800 font-medium">Medcare Hospital</span>
-                </div>
-                <div className="flex items-center gap-2 bg-medical-50 px-4 py-2 rounded-full">
-                  <GraduationCap className="h-5 w-5 text-medical-600" />
-                  <span className="text-medical-800 font-medium">Clinical Professor</span>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="mt-8 text-center">
+          <Button
+            onClick={() => navigate('/about')}
+            className="bg-medical-600 hover:bg-medical-700 text-white"
+          >
+            Learn More About Dr. Abuzaid
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
         </div>
       </div>
     </section>

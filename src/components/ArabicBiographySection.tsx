@@ -1,5 +1,7 @@
-import { GraduationCap, Award, Clock, Building2 } from "lucide-react";
+import { GraduationCap, Award, Clock, Building2, ArrowLeft } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const qualifications = [
   {
@@ -43,6 +45,8 @@ const qualifications = [
 ];
 
 export const ArabicBiographySection = () => {
+  const navigate = useNavigate();
+  
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-medical-50 to-white" dir="rtl">
       <div className="container mx-auto">
@@ -91,6 +95,16 @@ export const ArabicBiographySection = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <div className="mt-8 text-center">
+          <Button
+            onClick={() => navigate('/ar/about')}
+            className="bg-medical-600 hover:bg-medical-700 text-white"
+          >
+            المزيد عن د. أبو زيد
+            <ArrowLeft className="mr-2 h-4 w-4" />
+          </Button>
         </div>
       </div>
     </section>
