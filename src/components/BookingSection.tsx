@@ -1,4 +1,4 @@
-import { MapPin, Globe, Phone, Building } from "lucide-react";
+import { MapPin, Globe, Phone, Building, Linkedin, Mail } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
@@ -125,10 +125,25 @@ export const BookingSection = () => {
           ))}
         </div>
 
-        <div className="mt-12 p-6 bg-medical-50 rounded-xl border border-medical-100 text-center">
-          <p className="text-medical-700">
-            For urgent consultations or inquiries, please contact our medical offices directly
-          </p>
+        <div className="mt-12 p-6 bg-medical-50 rounded-xl border border-medical-100">
+          <div className="flex justify-center items-center gap-6">
+            <a 
+              href="https://ae.linkedin.com/in/osama-abuzaid-0290121a6" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-medical-700 hover:text-medical-500 transition-colors"
+            >
+              <Linkedin className="h-5 w-5" />
+              <span>Professional Profile</span>
+            </a>
+            <a 
+              href="mailto:contact@drabuzeidsurgery.ae" 
+              className="flex items-center gap-2 text-medical-700 hover:text-medical-500 transition-colors"
+            >
+              <Mail className="h-5 w-5" />
+              <span>Contact Us</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
