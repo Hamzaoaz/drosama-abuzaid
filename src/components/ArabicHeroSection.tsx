@@ -5,7 +5,8 @@ import { useNavigate } from "react-router-dom";
 export const ArabicHeroSection = () => {
   const navigate = useNavigate();
   
-  const scrollToBooking = () => {
+  const scrollToBooking = (locationId: string) => {
+    window.location.hash = `booking-${locationId}`;
     const bookingSection = document.querySelector('#booking-section');
     bookingSection?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -15,21 +16,20 @@ export const ArabicHeroSection = () => {
       icon: <Award className="h-5 w-5" />,
       text: "زمالة الكلية الملكية للجراحين"
     },
-     {
+    {
       icon: <GraduationCap className="h-5 w-5" />,
       text: "البورد الأردني"
     },
-      {
-        icon: <Star className="h-5 w-5" />,
-        text: "خبرة +20 عاماً"
-    },
-   
+    {
+      icon: <Star className="h-5 w-5" />,
+      text: "خبرة +20 عاماً"
+    }
   ];
 
   const locations = [
-    "مستشفى ميدكير الشارقة",
-    "مركز بيسان الطبي",
-    "مركز ميدكير الطبي - التعاون (قريباً)"
+    { id: "medcare-sharjah", name: "مستشفى ميدكير الشارقة" },
+    { id: "medcare-taawun", name: "مركز ميدكير الطبي - التعاون" },
+    { id: "bissan-medical", name: "مركز بيسان الطبي" }
   ];
 
   return (
@@ -83,17 +83,17 @@ export const ArabicHeroSection = () => {
 
           <div className="mt-6 flex flex-col items-center">
             <ul className="space-y-4" dir="rtl">
-              {locations.map((location, index) => (
-                <li key={index} className="flex items-center justify-between gap-4 text-medical-700 w-full max-w-md">
+              {locations.map((location) => (
+                <li key={location.id} className="flex items-center justify-between gap-4 text-medical-700 w-full max-w-md">
                   <div className="flex items-center gap-2">
                     <MapPin className="h-4 w-4 text-medical-500 flex-shrink-0" />
-                    <span>{location}</span>
+                    <span>{location.name}</span>
                   </div>
                   <Button 
                     variant="outline"
                     size="sm"
                     className="border-medical-500 text-medical-700 hover:bg-medical-50"
-                    onClick={scrollToBooking}
+                    onClick={() => scrollToBooking(location.id)}
                   >
                     <Calendar className="ml-1 h-4 w-4" />
                     احجز
