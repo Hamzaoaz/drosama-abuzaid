@@ -15,15 +15,6 @@ const locations = [
     phoneNumber: "+9718006332273",
   },
   {
-    id: "bissan-medical",
-    hospital: "Bissan Medical Center",
-    location: "Sharjah",
-    address: "Corniche St, Al Majaz",
-    city: "Sharjah",
-    country: "United Arab Emirates",
-    phoneNumber: "+971 6 573 7005",
-  },
-  {
     id: "medcare-taawun",
     hospital: "Medcare Medical Center Al-Taawun",
     location: "Sharjah",
@@ -32,6 +23,15 @@ const locations = [
     country: "United Arab Emirates",
     bookingLink: "https://www.medcare.ae/en/branches/view/medcare-medical-centre-sharjah.html",
     phoneNumber: "052 509 4473",
+  },
+  {
+    id: "bissan-medical",
+    hospital: "Bissan Medical Center",
+    location: "Sharjah",
+    address: "Corniche St, Al Majaz",
+    city: "Sharjah",
+    country: "United Arab Emirates",
+    phoneNumber: "+971 6 573 7005",
   }
 ];
 
