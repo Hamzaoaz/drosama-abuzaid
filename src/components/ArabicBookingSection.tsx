@@ -22,8 +22,8 @@ const locations = [
     city: "الشارقة",
     country: "الإمارات العربية المتحدة",
     bookingLink: "https://www.medcare.ae/en/branches/view/medcare-medical-centre-sharjah.html",
-    phoneNumber: "052 509 4473",
-  ,
+    phoneNumber: "052 509 4473"
+  },
   {
     id: "bissan-medical",
     hospital: "مركز بيسان الطبي",
@@ -31,7 +31,7 @@ const locations = [
     address: "شارع الكورنيش، المجاز",
     city: "الشارقة",
     country: "الإمارات العربية المتحدة",
-    phoneNumber: "+971 6 573 7005",
+    phoneNumber: "+971 6 573 7005"
   }
 ];
 
