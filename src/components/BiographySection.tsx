@@ -48,7 +48,10 @@ export const BiographySection = () => {
         "Advanced Laparoscopic Surgery",
         "Colorectal Surgery",
         "General Surgery",
-        "Gastrointestinal Surgery"
+        "Gastrointestinal Surgery",
+        "Hernia Surgery",
+        "Thyroid Surgery",
+        "Breast Surgery"
       ]
     }
   ];
