@@ -11,9 +11,10 @@ export const BiographySection = () => {
       title: "Education",
       icon: GraduationCap,
       items: [
-        "MBBS - Jordan University of Science and Technology",
-        "Higher Specialization in General Surgery",
-        "Jordanian Board of General Surgery Certification",
+        "MBBS - Jordan University of Science and Technology (JUST)",
+        "Higher Specialization in General Surgery (JUST)",
+        "Jordanian Board in General Surgery Certification",
+        "UK Fellowship Training",
         "Member of Royal College of Surgeons (MRCS), UK"
       ]
     },
@@ -24,17 +25,20 @@ export const BiographySection = () => {
         "20+ years of clinical experience",
         "Fellowship in Laparoscopic & Colorectal Surgery, UK",
         "Programme Director at Islamic Hospital, Amman",
-        "Clinical Assistant Professor, University of Sharjah"
+        "Clinical Assistant Professor, University of Sharjah",
       ]
     },
     {
-      title: "Hospital Affiliations",
+      title: "Memberships & Licensure",
       icon: Building2,
       items: [
-        "Medcare Hospital Sharjah",
-        "NMC Royal Hospital, Sharjah",
-        "Saudi German Hospital, Dubai",
-        "Rotherham General Hospital NHS, UK"
+        "General Medical Council-UK, GMC Number: 6074460",
+        "Jordan Medical Association",
+        "Jordanian Ministry of Health-License Number:10011/761",
+        "Jordanian Surgical Society",
+        "Emirates Medical Association",
+        "Emirates General Surgery Society",
+        "Ministry of Health UAE-License number: D70048",
       ]
     },
     {
