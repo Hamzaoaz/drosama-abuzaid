@@ -6,34 +6,6 @@ import { BookingSection } from "@/components/BookingSection";
 import { SurgeriesSection } from "@/components/SurgeriesSection";
 import { NavigationIndex } from "@/components/NavigationIndex";
 import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import App from "@/pages/App"; // English home page
-import ArabicIndex from "@/pages/ArabicIndex"; // Arabic home page
-import AboutPage from "@/pages/DetailedAbout"; // English About page
-import ArabicAboutPage from "@/pages/ArabicDetailedAbout"; // Arabic About page
-
-const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
-
-root.render(
-  <React.StrictMode>
-    <Router>
-      <Routes>
-        {/* English Home Page */}
-        <Route path="/" element={<App />} />
-
-        {/* Arabic Home Page */}
-        <Route path="/ar" element={<ArabicIndex />} />
-
-        {/* English About Page */}
-        <Route path="/about" element={<AboutPage />} />
-
-        {/* Arabic About Page */}
-        <Route path="/ar/about" element={<ArabicAboutPage />} />
-      </Routes>
-    </Router>
-  </React.StrictMode>
-);
 
 const Index = () => {
   return (

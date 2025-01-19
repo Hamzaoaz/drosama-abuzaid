@@ -22,15 +22,6 @@ const qualifications = [
       "زمالة في جراحة المنظار والقولون والمستقيم - المملكة المتحدة",
       "مدير البرنامج في المستشفى الإسلامي، عمان",
       "أستاذ مساعد سريري - جامعة الشارقة",
-      <div key="past-experience" className="mt-2">
-        <Button
-          variant="link"
-          onClick={() => navigate('/ar/about#experience')}
-          className="text-medical-600 hover:text-medical-700 p-0 h-auto font-normal"
-        >
-          عرض الخبرات السابقة ←
-        </Button>
-      </div>
     ]
   },
   {
