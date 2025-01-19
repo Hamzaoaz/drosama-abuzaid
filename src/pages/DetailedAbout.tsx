@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Award, GraduationCap, BookOpen, Globe } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import React from "react";
+import { ExperienceTimeline } from "@/components/ExperienceTimeline";
 
 const DetailedAbout = () => {
   const navigate = useNavigate();
@@ -151,12 +152,12 @@ const DetailedAbout = () => {
                   In addition to his clinical work, Dr. Abuzaid is actively involved
                   in medical education as a Clinical Assistant Professor at the
                   University of Sharjah, contributing to the development of the
-                  next generation of medical professionals. His commitment to
-                  excellence in both patient care and medical education makes him a
-                  respected figure in the surgical community.
+                  next generation of medical professionals.
                 </p>
               </div>
             </div>
+            
+            <ExperienceTimeline />
           </div>
         </div>
       </main>
@@ -165,4 +166,3 @@ const DetailedAbout = () => {
 };
 
 export default DetailedAbout;
-

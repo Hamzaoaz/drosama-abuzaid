@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Award, GraduationCap, BookOpen, Globe } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import React from "react";
+import { ArabicExperienceTimeline } from "@/components/ArabicExperienceTimeline";
 
 const ArabicDetailedAbout = () => {
   const navigate = useNavigate();
@@ -128,6 +129,8 @@ const ArabicDetailedAbout = () => {
                 </p>
               </div>
             </div>
+            
+            <ArabicExperienceTimeline />
           </div>
         </div>
       </main>

@@ -26,6 +26,15 @@ export const BiographySection = () => {
         "Fellowship in Laparoscopic & Colorectal Surgery, UK",
         "Programme Director at Islamic Hospital, Amman",
         "Clinical Assistant Professor, University of Sharjah",
+        <div key="past-experience" className="mt-2">
+          <Button
+            variant="link"
+            onClick={() => navigate('/about#experience')}
+            className="text-medical-600 hover:text-medical-700 p-0 h-auto font-normal"
+          >
+            View Past Experience →
+          </Button>
+        </div>
       ]
     },
     {
