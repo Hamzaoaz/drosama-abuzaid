@@ -5,19 +5,6 @@ import { useNavigate } from "react-router-dom";
 import React from "react";
 
 const ArabicDetailedAbout = () => {
-  return (
-    <div>
-      <h1>حول الدكتور أسامة أبو زيد</h1>
-      <p>
-        الدكتور أسامة أبو زيد هو جراح عام خبير لديه سنوات من الخبرة في
-        الاستشارات، العمليات الجراحية، والإجراءات المتخصصة.
-      </p>
-    </div>
-  );
-};
-
-export default ArabicDetailedAbout;
-const ArabicDetailedAbout = () => {
   const navigate = useNavigate();
 
   const certificates = [
@@ -25,20 +12,20 @@ const ArabicDetailedAbout = () => {
       title: "زمالة الكلية الملكية للجراحين",
       institution: "الكلية الملكية للجراحين، المملكة المتحدة",
       year: "٢٠٠٥",
-      description: "شهادة الزمالة في الممارسة الجراحية"
+      description: "شهادة الزمالة في الممارسة الجراحية",
     },
     {
       title: "البورد الأردني في الجراحة العامة",
       institution: "المجلس الطبي الأردني",
       year: "٢٠٠٣",
-      description: "شهادة التخصص في الجراحة العامة"
+      description: "شهادة التخصص في الجراحة العامة",
     },
     {
       title: "بكالوريوس الطب والجراحة",
       institution: "جامعة العلوم والتكنولوجيا الأردنية",
       year: "١٩٩٨",
-      description: "شهادة البكالوريوس في الطب والجراحة"
-    }
+      description: "شهادة البكالوريوس في الطب والجراحة",
+    },
   ];
 
   const achievements = [
@@ -46,7 +33,7 @@ const ArabicDetailedAbout = () => {
     "أكثر من ١٠٠٠ عملية منظار ناجحة",
     "أستاذ مساعد سريري في جامعة الشارقة",
     "مدير البرنامج في المستشفى الإسلامي، عمان",
-    "تدريب متقدم في تقنيات الجراحة قليلة التوغل"
+    "تدريب متقدم في تقنيات الجراحة قليلة التوغل",
   ];
 
   return (
@@ -54,21 +41,21 @@ const ArabicDetailedAbout = () => {
       <Helmet>
         <title>نبذة عن د. أسامة سعيد أبو زيد - الملف التفصيلي</title>
       </Helmet>
-      
+
       <main className="min-h-screen bg-gradient-to-b from-medical-50 to-white py-12" dir="rtl">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-8">
-            <Button 
-              variant="outline" 
-              onClick={() => navigate('/ar')}
+            <Button
+              variant="outline"
+              onClick={() => navigate("/ar")}
               className="flex items-center gap-2"
             >
               <ArrowLeft className="h-4 w-4" />
               العودة للرئيسية
             </Button>
-            <Button 
-              variant="outline" 
-              onClick={() => navigate('/about')}
+            <Button
+              variant="outline"
+              onClick={() => navigate("/about")}
               className="flex items-center gap-2"
             >
               <Globe className="h-4 w-4" />
@@ -85,12 +72,8 @@ const ArabicDetailedAbout = () => {
                   className="rounded-full w-full h-full object-cover border-4 border-medical-100 shadow-xl"
                 />
               </div>
-              <h1 className="text-4xl font-bold text-medical-900 mb-4">
-                د. أسامة سعيد أبو زيد
-              </h1>
-              <p className="text-xl text-medical-700">
-                استشاري الجراحة العامة والمنظار والمستقيم
-              </p>
+              <h1 className="text-4xl font-bold text-medical-900 mb-4">د. أسامة سعيد أبو زيد</h1>
+              <p className="text-xl text-medical-700">استشاري الجراحة العامة والمنظار والمستقيم</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -134,13 +117,14 @@ const ArabicDetailedAbout = () => {
               </div>
               <div className="space-y-4 text-medical-700">
                 <p>
-                  يمتلك الدكتور أسامة أبو زيد خبرة تزيد عن عشرين عاماً في مجال الجراحة العامة وجراحة المنظار. تمتد مسيرته المهنية عبر العديد من المؤسسات المرموقة في الأردن والمملكة المتحدة والإمارات العربية المتحدة، حيث أظهر باستمرار التميز في الرعاية الجراحية والتعليم الطبي.
+                  يمتلك الدكتور أسامة أبو زيد خبرة تزيد عن عشرين عاماً في مجال الجراحة العامة وجراحة المنظار. تمتد
+                  مسيرته المهنية عبر العديد من المؤسسات المرموقة.
                 </p>
                 <p>
-                  كعضو في الكلية الملكية للجراحين في المملكة المتحدة، ومع تدريب مكثف في جراحة المنظار وجراحة القولون والمستقيم، يجمع الدكتور أبو زيد بين الخبرة الجراحية والالتزام برعاية المرضى. يركز نهجه في الجراحة على التقنيات قليلة التوغل، مما يضمن فترات تعافي أسرع ونتائج أفضل للمرضى.
+                  كعضو في الكلية الملكية للجراحين، يجمع الدكتور أبو زيد بين الخبرة الجراحية والالتزام برعاية المرضى.
                 </p>
                 <p>
-                  بالإضافة إلى عمله السريري، يشارك الدكتور أبو زيد بنشاط في التعليم الطبي كأستاذ مساعد سريري في جامعة الشارقة، مساهماً في تطوير الجيل القادم من المهنيين الطبيين. يجعله التزامه بالتميز في كل من رعاية المرضى والتعليم الطبي شخصية محترمة في المجتمع الجراحي.
+                  بالإضافة إلى عمله السريري، يشارك الدكتور أبو زيد بنشاط في التعليم الطبي كأستاذ مساعد سريري.
                 </p>
               </div>
             </div>
