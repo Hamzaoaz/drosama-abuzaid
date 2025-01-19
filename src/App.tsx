@@ -1,3 +1,4 @@
+import React from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -7,19 +8,6 @@ import Index from "./pages/Index";
 import ArabicIndex from "./pages/ArabicIndex";
 import DetailedAbout from "./pages/DetailedAbout";
 import ArabicDetailedAbout from "./pages/ArabicDetailedAbout";
-import React from "react";
-import { Link } from "react-router-dom";
-
-const App = () => {
-  return (
-    <div>
-      <h1>Welcome to Dr. Osama Abuzaid's Website</h1>
-      <Link to="/about">Learn More About Dr. Osama</Link>
-    </div>
-  );
-};
-
-
 
 const queryClient = new QueryClient();
 
@@ -41,3 +29,4 @@ const App = () => (
 );
 
 export default App;
+
