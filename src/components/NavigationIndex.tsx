@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -13,20 +13,41 @@ interface NavigationIndexProps {
 
 export const NavigationIndex = ({ isArabic = false }: NavigationIndexProps) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [currentSection, setCurrentSection] = useState("hero-section");
 
   const sections = isArabic ? [
-    { id: "hero-section", label: "الرئيسية" },
-    { id: "services-section", label: "خدماتنا المتخصصة" },
-    { id: "surgeries-section", label: "الإجراءات الجراحية" },
-    { id: "biography-section", label: "السيرة المهنية" },
-    { id: "booking-section", label: "حجز موعد" },
+    { id: "hero-section", label: "الرئيسية", buttonText: "الرئيسية" },
+    { id: "services-section", label: "خدماتنا المتخصصة", buttonText: "الخدمات" },
+    { id: "surgeries-section", label: "الإجراءات الجراحية", buttonText: "الجراحة" },
+    { id: "biography-section", label: "السيرة المهنية", buttonText: "السيرة" },
+    { id: "booking-section", label: "حجز موعد", buttonText: "الحجز" },
   ] : [
-    { id: "hero-section", label: "Home" },
-    { id: "services-section", label: "Specialized Services" },
-    { id: "surgeries-section", label: "Surgical Procedures" },
-    { id: "biography-section", label: "Professional Background" },
-    { id: "booking-section", label: "Book Appointment" },
+    { id: "hero-section", label: "Home", buttonText: "Home" },
+    { id: "services-section", label: "Specialized Services", buttonText: "Services" },
+    { id: "surgeries-section", label: "Surgical Procedures", buttonText: "Procedures" },
+    { id: "biography-section", label: "Professional Background", buttonText: "Biography" },
+    { id: "booking-section", label: "Book Appointment", buttonText: "Booking" },
   ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 100;
+      
+      for (const section of sections) {
+        const element = document.getElementById(section.id);
+        if (element) {
+          const { offsetTop, offsetHeight } = element;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setCurrentSection(section.id);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [sections]);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -36,8 +57,13 @@ export const NavigationIndex = ({ isArabic = false }: NavigationIndexProps) => {
     }
   };
 
+  const getCurrentSectionLabel = () => {
+    const section = sections.find(s => s.id === currentSection);
+    return section ? section.buttonText : sections[0].buttonText;
+  };
+
   return (
-    <div className={`fixed top-4 ${isArabic ? 'left-4' : 'right-4'} z-50`}>
+    <div className={`fixed top-4 ${isArabic ? 'right-4' : 'left-4'} z-50`}>
       <Collapsible open={isOpen} onOpenChange={setIsOpen}>
         <CollapsibleTrigger asChild>
           <Button variant="outline" className="w-full mb-2 bg-white shadow-md">
@@ -46,7 +72,7 @@ export const NavigationIndex = ({ isArabic = false }: NavigationIndexProps) => {
             ) : (
               <ChevronDown className="h-4 w-4 mr-2" />
             )}
-            {isArabic ? "فهرس المحتويات" : "Page Index"}
+            {getCurrentSectionLabel()}
           </Button>
         </CollapsibleTrigger>
         <CollapsibleContent className="bg-white rounded-lg shadow-lg p-2">
