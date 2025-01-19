@@ -2,7 +2,21 @@ import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Award, GraduationCap, BookOpen, Globe } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import React from "react";
 
+const DetailedAbout = () => {
+  return (
+    <div>
+      <h1>About Dr. Osama Abuzaid</h1>
+      <p>
+        Dr. Osama Abuzaid is an expert general surgeon with years of experience in
+        consultations, surgeries, and specialized procedures.
+      </p>
+    </div>
+  );
+};
+
+export default DetailedAbout;
 const DetailedAbout = () => {
   const navigate = useNavigate();
 
