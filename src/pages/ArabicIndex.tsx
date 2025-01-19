@@ -1,3 +1,4 @@
+import React from "react";
 import { Helmet } from "react-helmet";
 import { ArabicHeroSection } from "@/components/ArabicHeroSection";
 import { ArabicServicesSection } from "@/components/ArabicServicesSection";
@@ -5,19 +6,7 @@ import { ArabicBiographySection } from "@/components/ArabicBiographySection";
 import { ArabicBookingSection } from "@/components/ArabicBookingSection";
 import { ArabicSurgeriesSection } from "@/components/ArabicSurgeriesSection";
 import { NavigationIndex } from "@/components/NavigationIndex";
-import React from "react";
-import { Link } from "react-router-dom";
 
-const ArabicIndex = () => {
-  return (
-    <div>
-      <h1>مرحبًا بكم في صفحة الدكتور أسامة أبو زيد</h1>
-      <Link to="/ar/about">تعرف على المزيد عن الدكتور أسامة</Link>
-    </div>
-  );
-};
-
-export default ArabicIndex;
 const ArabicIndex = () => {
   return (
     <>
@@ -41,3 +30,4 @@ const ArabicIndex = () => {
 };
 
 export default ArabicIndex;
+
