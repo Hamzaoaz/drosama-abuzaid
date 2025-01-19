@@ -19,7 +19,7 @@ const App = () => {
   );
 };
 
-export default App;
+
 
 const queryClient = new QueryClient();
 
