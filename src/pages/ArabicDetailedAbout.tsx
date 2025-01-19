@@ -2,7 +2,21 @@ import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Award, GraduationCap, BookOpen, Globe } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import React from "react";
 
+const ArabicDetailedAbout = () => {
+  return (
+    <div>
+      <h1>حول الدكتور أسامة أبو زيد</h1>
+      <p>
+        الدكتور أسامة أبو زيد هو جراح عام خبير لديه سنوات من الخبرة في
+        الاستشارات، العمليات الجراحية، والإجراءات المتخصصة.
+      </p>
+    </div>
+  );
+};
+
+export default ArabicDetailedAbout;
 const ArabicDetailedAbout = () => {
   const navigate = useNavigate();
 
