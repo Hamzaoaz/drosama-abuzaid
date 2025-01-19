@@ -4,6 +4,7 @@ import { ArabicServicesSection } from "@/components/ArabicServicesSection";
 import { ArabicBiographySection } from "@/components/ArabicBiographySection";
 import { ArabicBookingSection } from "@/components/ArabicBookingSection";
 import { ArabicSurgeriesSection } from "@/components/ArabicSurgeriesSection";
+import { NavigationIndex } from "@/components/NavigationIndex";
 
 const ArabicIndex = () => {
   return (
@@ -16,11 +17,12 @@ const ArabicIndex = () => {
         />
       </Helmet>
       <main className="min-h-screen" dir="rtl">
-        <ArabicHeroSection />
-        <ArabicServicesSection />
-        <ArabicSurgeriesSection />
-        <ArabicBiographySection />
-        <ArabicBookingSection />
+        <NavigationIndex isArabic />
+        <div id="hero-section"><ArabicHeroSection /></div>
+        <div id="services-section"><ArabicServicesSection /></div>
+        <div id="surgeries-section"><ArabicSurgeriesSection /></div>
+        <div id="biography-section"><ArabicBiographySection /></div>
+        <div id="booking-section"><ArabicBookingSection /></div>
       </main>
     </>
   );

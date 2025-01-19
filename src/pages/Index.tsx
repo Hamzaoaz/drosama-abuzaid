@@ -4,6 +4,7 @@ import { ServicesSection } from "@/components/ServicesSection";
 import { BiographySection } from "@/components/BiographySection";
 import { BookingSection } from "@/components/BookingSection";
 import { SurgeriesSection } from "@/components/SurgeriesSection";
+import { NavigationIndex } from "@/components/NavigationIndex";
 
 const Index = () => {
   return (
@@ -20,11 +21,12 @@ const Index = () => {
         />
       </Helmet>
       <main className="min-h-screen">
-        <HeroSection />
-        <ServicesSection />
-        <SurgeriesSection />
-        <BiographySection />
-        <BookingSection />
+        <NavigationIndex />
+        <div id="hero-section"><HeroSection /></div>
+        <div id="services-section"><ServicesSection /></div>
+        <div id="surgeries-section"><SurgeriesSection /></div>
+        <div id="biography-section"><BiographySection /></div>
+        <div id="booking-section"><BookingSection /></div>
       </main>
     </>
   );
