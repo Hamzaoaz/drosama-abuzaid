@@ -1,0 +1,9 @@
+[build]
+command = "bun run build"
+publish = "dist"
+
+[build.environment]
+NODE_VERSION = "18"
+
+[context.production]
+environment = { "BUN_INSTALL" = "1" }
