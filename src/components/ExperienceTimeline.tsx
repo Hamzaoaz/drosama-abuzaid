@@ -7,16 +7,19 @@ const experiences = [
     location: "Sharjah, UAE",
     logo: "/lovable-uploads/medcare-logo.png"
   },
-     title: "Consultant General Laparoscopic and Colorectal Surgeon",
+  {
+    title: "Consultant General Laparoscopic and Colorectal Surgeon",
     organization: "Bissan Medical Center",
     location: "Sharjah, UAE",
     logo: "/lovable-uploads/bissan-logo.png"
   },
+  {
      title: "Consultant General Laparoscopic and Colorectal Surgeon",
     organization: "Medcare Hospital",
     location: "Sharjah, UAE",
     logo: "/lovable-uploads/medcare-logo.png"
   },
+  {
     title: "Adjunct Professor",
     organization: "The University of Sharjah",
     location: "Sharjah, UAE",
