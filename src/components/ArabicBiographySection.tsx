@@ -34,7 +34,7 @@ const qualifications = [
     ]
   },
   {
-    title: "المستشفيات",
+    title: "العضويات والتراخيص",
     icon: Building2,
     items: [
       "المجلس الطبي العام - المملكة المتحدة، رقم GMC: 6074460",
