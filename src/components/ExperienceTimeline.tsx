@@ -2,7 +2,22 @@ import { Building2, MapPin } from "lucide-react";
 
 const experiences = [
   {
-    title: "Assistant Professor",
+     title: "Consultant General Laparoscopic and Colorectal Surgeon",
+    organization: "Medcare Medical Center",
+    location: "Sharjah, UAE",
+    logo: "/lovable-uploads/medcare-logo.png"
+  },
+     title: "Consultant General Laparoscopic and Colorectal Surgeon",
+    organization: "Bissan Medical Center",
+    location: "Sharjah, UAE",
+    logo: "/lovable-uploads/bissan-logo.png"
+  },
+     title: "Consultant General Laparoscopic and Colorectal Surgeon",
+    organization: "Medcare Hospital",
+    location: "Sharjah, UAE",
+    logo: "/lovable-uploads/medcare-logo.png"
+  },
+    title: "Adjunct Professor",
     organization: "The University of Sharjah",
     location: "Sharjah, UAE",
     logo: "/lovable-uploads/uos-logo.png"
@@ -20,7 +35,7 @@ const experiences = [
     logo: "/lovable-uploads/sgh-logo.png"
   },
   {
-    title: "General Laparoscopic and Colorectal surgeon",
+    title: "Consultant General Laparoscopic and Colorectal surgeon",
     organization: "The Islamic Hospital",
     location: "Jordan",
     logo: "/lovable-uploads/ih-logo.png"
