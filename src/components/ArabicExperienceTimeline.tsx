@@ -20,7 +20,7 @@ const experiences = [
     logo: "/lovable-uploads/sgh-logo.png"
   },
   {
-    title: "جراح عام ومنظار وجراحة القولون والمستقيم",
+    title: " استشاري جراحة عامة ومنظار وجراحة القولون والمستقيم",
     organization: "المستشفى الإسلامي",
     location: "الأردن",
     logo: "/lovable-uploads/ih-logo.png"
