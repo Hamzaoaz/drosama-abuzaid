@@ -31,8 +31,8 @@ const DetailedAbout = () => {
 
   const achievements = [
     "20+ years of surgical experience",
-    "Over 1000+ successful laparoscopic procedures",
-    "Clinical Assistant Professor at University of Sharjah",
+    "Over 7000+ successful surgeries and laparoscopic procedures",
+    "Clinical Adjunct Professor at University of Sharjah",
     "Programme Director at Islamic Hospital, Amman",
     "Advanced training in minimally invasive surgical techniques",
   ];
@@ -142,7 +142,7 @@ const DetailedAbout = () => {
                 </p>
                 <p>
                   As a member of the Royal College of Surgeons (MRCS), UK, and with
-                  extensive training in Laparoscopic & Colorectal Surgery, Dr.
+                  extensive fellowship training in Laparoscopic & Colorectal Surgery, Dr.
                   Abuzaid combines surgical expertise with a commitment to patient
                   care. His approach to surgery emphasizes minimally invasive
                   techniques, ensuring faster recovery times and better outcomes
@@ -150,7 +150,7 @@ const DetailedAbout = () => {
                 </p>
                 <p>
                   In addition to his clinical work, Dr. Abuzaid is actively involved
-                  in medical education as a Clinical Assistant Professor at the
+                  in medical education as a Clinical Adjunct Professor at the
                   University of Sharjah, contributing to the development of the
                   next generation of medical professionals.
                 </p>
