@@ -25,7 +25,7 @@ export const BiographySection = () => {
         "20+ years of clinical experience",
         "Fellowship in Laparoscopic & Colorectal Surgery, UK",
         "Programme Director at Islamic Hospital, Amman",
-        "Clinical Assistant Professor, University of Sharjah",
+        "Clinical Adjunct Professor, University of Sharjah",
         <div key="past-experience" className="mt-2">
           <Button
             variant="link"
