@@ -22,15 +22,17 @@ const qualifications = [
       "زمالة في جراحة المنظار والقولون والمستقيم - المملكة المتحدة",
       "مدير البرنامج في المستشفى الإسلامي، عمان",
       "أستاذ سريري - جامعة الشارقة",
-      <div key="past-experience" className="mt-2">
-        <Button
-          variant="link"
-          onClick={() => navigate('/ar/about#experience')}
-          className="text-medical-600 hover:text-medical-700 p-0 h-auto font-normal"
-        >
-          عرض الخبرات السابقة ←
-        </Button>
-      </div>
+      (navigate) => (
+        <div key="past-experience" className="mt-2">
+          <Button
+            variant="link"
+            onClick={() => navigate('/ar/about#experience')}
+            className="text-medical-600 hover:text-medical-700 p-0 h-auto font-normal"
+          >
+            عرض الخبرات السابقة ←
+          </Button>
+        </div>
+      )
     ]
   },
   {
@@ -105,7 +107,9 @@ export const ArabicBiographySection = () => {
                   {qual.items.map((item, index) => (
                     <li key={index} className="text-medical-700 flex items-center gap-3 group">
                       <span className="w-2 h-2 bg-medical-500 rounded-full group-hover:scale-125 transition-transform" />
-                      <span className="group-hover:text-medical-900 transition-colors">{item}</span>
+                      <span className="group-hover:text-medical-900 transition-colors">
+                        {typeof item === 'function' ? item(navigate) : item}
+                      </span>
                     </li>
                   ))}
                 </ul>
