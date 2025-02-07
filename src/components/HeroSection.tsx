@@ -28,7 +28,7 @@ export const HeroSection = () => {
 
   const locations = [
     { id: "medcare-sharjah", name: "Medcare Hospital Sharjah" },
-    { id: "medcare-taawun", name: "Medcare Medical Center Al-Taawun (Soon)" },
+    { id: "medcare-taawun", name: "Medcare Medical Center Al-Taawun" },
     { id: "bissan-medical", name: "Bissan Medical Center" }
   ];
 
