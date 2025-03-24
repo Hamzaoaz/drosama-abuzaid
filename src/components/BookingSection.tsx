@@ -21,8 +21,8 @@ const locations = [
     address: "Al-Taawun, Sharjah",
     city: "Sharjah",
     country: "United Arab Emirates",
-    bookingLink: "https://www.medcare.ae/en/branches/view/medcare-medical-centre-sharjah.html",
-    phoneNumber: "052 509 4473",
+    bookingLink: "https://medcare.okadoc.com/en-ae/doctor/general-surgery/sharjah/osama-saeed-fuad-abuzaid?session_id=97f9d2d6-7eb4-4a1d-944b-73f7a561597a.5u64-1742822389819t4mp4n",
+    phoneNumber: "+9718006332273",
   },
   {
     id: "bissan-medical",
